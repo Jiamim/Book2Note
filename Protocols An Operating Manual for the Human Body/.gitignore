@@ -1,0 +1,38 @@
+# Local source books are not part of the public repository.
+/Books/
+
+# Reproducible HTML exports; the notes EPUB is included for direct reading.
+/Presentations/Protocols/index.html
+/Presentations/Protocols/Protocols-读书分享.html
+
+# Python and local tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+.agents/
+.codex/
+.aws/
+*.pem
+*.key
+
+# Temporary output
+*.tmp
+*.log

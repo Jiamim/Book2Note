@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="description" content="《Protocols》中文读书分享：50 页完整内容，35 页分享路线，七章机制、方法、研究与完整笔记。">
+ <title>Protocols · 人体使用手册 · 读书分享</title>
+ <link rel="stylesheet" href="theme.css">
+ <script defer src="presentation.js"></script>
+</head>
+<body>
+<main class="stage" aria-label="读书分享幻灯片">
+<div class="deck">
+
+{{SLIDES}}
+
+</div>
+</main>
+<div class="progress" aria-hidden="true"></div>
+<nav class="toolbar" aria-label="演示控制">
+ <div class="toolbar-group"><span class="brand">PROTOCOLS</span><button id="prev-btn" type="button" aria-label="上一页" title="上一页，左方向键">上一页</button><button id="next-btn" type="button" aria-label="下一页" title="下一页，右方向键">下一页</button><div class="counter"><label class="sr-only" for="page-input">跳转页码</label><input id="page-input" type="number" min="1" max="50" value="1" aria-label="跳转页码"><span id="page-total">/ 35</span></div></div>
+ <div class="toolbar-group"><label class="sr-only" for="route-select">演示路线</label><select id="route-select" aria-label="演示路线"><option value="sharing">25–30 分钟分享</option><option value="complete">完整阅读 · 50 页</option></select><button id="library-btn" type="button" title="打开分章笔记">读书笔记</button><button id="overview-btn" type="button" title="目录，O">目录</button><button id="notes-btn" type="button" aria-pressed="false" aria-controls="notes-panel" title="演讲备注，N">备注</button><button id="presenter-btn" type="button" title="打开独立演讲者窗口，P">演讲者</button><button id="fullscreen-btn" type="button" title="全屏，F">全屏</button><button id="blackout-btn" type="button" aria-pressed="false" title="黑屏，B">黑屏</button><button id="print-btn" type="button" title="打印或保存 PDF">打印</button><button id="help-btn" type="button" aria-label="快捷键帮助" title="快捷键，?">?</button></div>
+</nav>
+<aside class="notes-panel" id="notes-panel" hidden aria-label="演讲备注">
+ <div class="timer"><span class="timer-value" id="timer-value" aria-label="演讲计时">00:00</span><div><button type="button" id="timer-start">开始</button> <button type="button" id="timer-reset">重置</button></div></div>
+ <div class="notes-meta" id="notes-meta"></div><h2 id="notes-title"></h2><div id="notes-copy"></div><div class="notes-sources" id="notes-sources"></div>
+</aside>
+<dialog id="overview" class="overview-dialog" aria-labelledby="overview-title"><div class="dialog-header"><h2 id="overview-title">演示目录</h2><button type="button" data-close aria-label="关闭目录">×</button></div><div class="overview-grid"></div></dialog>
+<dialog id="help" class="help-dialog" aria-labelledby="help-title"><div class="dialog-header"><h2 id="help-title">演示快捷键</h2><button type="button" data-close aria-label="关闭帮助">×</button></div><div class="help-content"><table><tbody><tr><td>方向键 / 空格 / Page Down</td><td>翻页</td></tr><tr><td>Home / End</td><td>第一 / 最后一页</td></tr><tr><td>O</td><td>打开目录</td></tr><tr><td>N</td><td>显示或隐藏演讲备注</td></tr><tr><td>L</td><td>打开分章读书笔记</td></tr><tr><td>P</td><td>独立演讲者窗口，与主窗口同步</td></tr><tr><td>F</td><td>全屏</td></tr><tr><td>B</td><td>黑屏或返回</td></tr><tr><td>?</td><td>快捷键帮助</td></tr><tr><td>左右滑动</td><td>触屏翻页</td></tr></tbody></table><p>分享路线包含前 35 页，完整阅读包含全部 50 页。打印当前路线的横版页面，可保存 PDF。竖屏手机支持逐页阅读。</p><p>投屏时建议主窗口仅显示幻灯片，用独立演讲者窗口查看备注。页码可直接输入，地址中的 #slide-N 可定位某一页。</p></div></dialog>
+<dialog id="library" class="library-dialog" aria-labelledby="library-title"><div class="dialog-header"><h2 id="library-title">读书笔记</h2><button type="button" data-close aria-label="关闭笔记目录">×</button></div><div id="library-list" class="library-list"></div></dialog>
+<dialog id="note-reader" class="note-dialog" aria-labelledby="note-reader-title"><div class="dialog-header"><h2 id="note-reader-title">分章笔记</h2><div><button type="button" id="download-note">下载 Markdown</button><button type="button" data-close aria-label="关闭笔记">×</button></div></div><article id="note-reader-body" class="note-reader-body"></article></dialog>
+<div class="blackout" id="blackout" hidden aria-label="演示黑屏"></div>
+<div class="toast" id="toast" role="status" hidden></div>
+<div class="sr-only" id="live-status" aria-live="polite"></div>
+<noscript><p style="position:fixed;top:10px;left:20px;z-index:50;background:#fff;padding:16px">请开启 JavaScript 以使用翻页功能，或通过打印查看全部页面。</p></noscript>
+</body>
+</html>

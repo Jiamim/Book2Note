@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-labelledby="title description">
+  <title id="title">Protocols 中文读书笔记</title>
+  <desc id="description">七个主题、47 个方案：理解机制、选择方法、检验掌握。</desc>
+  <rect width="600" height="800" fill="#102d40"/>
+  <rect x="42" y="50" width="516" height="700" fill="none" stroke="#678797"/>
+  <path d="M66 82h58" stroke="#d6a26d" stroke-width="7"/>
+  <g font-family="sans-serif" fill="#f2eee7">
+    <text x="66" y="190" font-size="54" font-weight="bold">PROTOCOLS</text>
+    <text x="66" y="264" font-size="47" font-weight="bold">中文读书笔记</text>
+    <text x="68" y="337" font-size="23" fill="#b3c8d0">七个主题 · 47 个方案</text>
+    <text x="68" y="466" font-size="19" fill="#d6a26d">01</text>
+    <text x="116" y="470" font-size="30">理解机制</text>
+    <text x="68" y="541" font-size="19" fill="#d6a26d">02</text>
+    <text x="116" y="545" font-size="30">选择方法</text>
+    <text x="68" y="616" font-size="19" fill="#d6a26d">03</text>
+    <text x="116" y="620" font-size="30">检验掌握</text>
+    <text x="68" y="707" font-size="18" fill="#b3c8d0">睡眠 · 运动 · 压力 · 营养 · 光照 · 学习 · 成长</text>
+  </g>
+</svg>
